@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Github Profile Data</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      console.log("Users");
+      fetch("https://api.github.com/users/sarmad426")
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+    </script>
+  </body>
+</html>
